@@ -1,0 +1,482 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding:0;
+  margin:0;
+  height:100%;
+}
+
+main {
+  padding: 30px 15%;
+  min-width: 960px;
+}
+
+
+/*--------------------Header------------------
+/*Header logo_blanc.png */
+nav{
+  display: flex;
+  padding: 1% 2%;
+  background-color:  #6f9697;
+  justify-content: space-between;
+  align-items: center;
+}
+ nav img{
+   width: 150px
+ }
+
+ /* Header right top two links(Menu) fixing there position, inline, inbetween spaces, fontsize and so on*/
+ .nav-links{
+   flex: 1;
+   text-align: right;
+
+ }
+ .nav-links ul li{
+   list-style: none;
+   display: inline-block;
+   padding: 8px 12px;
+   position:relative;
+ }
+ .nav-links ul li a{
+   color:rgb(44, 25, 150);
+   text-decoration: none;
+   font-size: 24px;
+ }
+/*Hover Effect on the menu*/
+.nav-links ul li::after{
+ content: '';
+ width: 0%;
+ height: 2px;
+ background: hsl(4, 90%, 58%);
+ display: block;
+ margin: auto;
+ transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+ width: 100%;
+}
+/*-----------------------------------------------------------------------------Home Page-------------------------------------------------------*/
+ /*Header logo_dark.png*/
+ .logo-image {
+   display: flex;
+   justify-content: center;
+   } 
+.logo-image img{
+    width: 200px;
+     }
+.logo-image {
+   padding: 50px 50px 50px 50px;
+  } 
+
+
+.text-box{
+font-size:40px;
+position:absolute;
+top: 50%;
+left:50%;
+transform:translate(-50%, -50%);
+}
+/*----------------Text Design and animation---------------------*/
+span{
+display: inline-block;
+font-weight:bold;
+animation: mover 6s linear infinite;
+}
+span:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+span:nth-child(2) {
+  animation-delay: 1s;
+}
+
+span:nth-child(3) {
+  animation-delay: 1.5s;
+}
+span:nth-child(4) {
+  animation-delay: 2s;
+}
+span:nth-child(5) {
+  animation-delay: 2.5s;
+}
+
+
+@keyframes mover{
+  0%{
+    text-shadow:0 0 30px  rgba(0, 0, 0, 0);
+  }
+  50%{
+    text-shadow:0 0 30px rgba(0, 0, 0, .30);
+    transform: translateY(30px);
+  }
+  
+ 100% {
+    text-shadow:0 0 30px rgba(0, 0, 0, 0);
+ }
+  
+}
+
+
+.main-image{
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+.main-image {
+  display: flex;
+  justify-content: center;
+  } 
+.main-image img{
+  width: 50%;
+  height:80%;
+}
+
+.main-image{
+position: relative;
+}  
+
+/*----------------USERS PAGE---------------------------------------*/
+
+U_Title h1 {
+  width:500px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.U_Title {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+  height: 200px;
+  padding-top: 100px;
+  background-color: #6f9697;
+}
+
+.U_Title h1{
+  color: rgb(44, 25, 150);
+  text-align: center;
+  vertical-align: center;
+  font-size: 50px;
+  padding-bottom: 70px;
+}
+/*-----------User page Table--------------*/
+
+.table_U {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table_U td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.table_U tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+
+/*----------------ERROR MESSAGE------------------------------------------------------*/
+
+.Err_Message{
+  color: #e21b1b;
+  text-align: center;
+  vertical-align: center;
+  font-size: 70px;
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+
+/*---------------------------ADDUSER PAGE--------------------------------------------*/
+
+.A_U_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+  height: 100px;
+  padding-top: 100px;
+  background-color: #6f9697;
+  padding: 12px 0;
+  font-size: 13px;
+}
+
+.A_U_title h1{
+color: rgb(44, 25, 150);
+text-align: center;
+vertical-align: center;
+font-size: 30px;
+padding-bottom: 50px;
+padding-top: 50px;
+}
+.users-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .form-control{
+  width: 90%;
+  width: 600px;
+  background-color: darkgrey;
+  border: none;
+  outline: none;
+  border-top: 1px solid gray;
+  color: #fff;
+  font-size: 40px;
+  font-weight:inherit;
+  margin-bottom: 16px;
+  }
+  
+  .formButton {
+  text-align: center;
+  }
+  .submit {
+  display: block;
+  background-color: #6f9697;
+  position: relative;
+  font-size: 30px;
+  padding: 12px 34px;
+  top: 28%;
+  margin: auto;
+  }
+  /*Hover on the submit button */
+  .submit {
+  transition-duration: 0.4s;
+  }
+  
+  .submit:hover {
+  background-color: #e92949; 
+  color: white;
+  }
+/*-------------------------------------ADD SCHEDULE PAGE----------------------------*/
+
+.A_S_title{
+display: flex;
+justify-content: center;
+align-items: center;
+vertical-align: center;
+height: 100px;
+padding-top: 100px;
+background-color:#6f9697;
+padding: 12px 0;
+font-size: 13px;
+}
+
+.A_S_title h1{
+color: rgb(44, 25, 150);
+text-align: center;
+vertical-align: center;
+font-size: 30px;
+padding-bottom: 50px;
+padding-top: 50px;
+}
+.schedules-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .form-control{
+  width: 50%;
+  width: 600px;
+  background-color: darkgrey;
+  border: none;
+  outline: none;
+  border-top: 1px solid gray;
+  color: #fff;
+  font-size: 40px;
+  font-weight:inherit;
+  margin-bottom: 16px;
+  }
+  
+  .formButton_S {
+  text-align: center;
+  }
+  .submit_S {
+  display: block;
+  background-color: darkgray;
+  position: relative;
+  font-size: 30px;
+  padding: 12px 34px;
+  top: 28%;
+  margin: auto;
+  }
+  /*Hover on the submit button */
+  .submit_S {
+  transition-duration: 0.4s;
+  }
+  
+  .submit_S:hover {
+  background-color: #e92949; 
+  color: white;
+  }
+
+/*--------------Schedules Page----------------------------------------------*/
+.S_Title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    height: 200px;
+    padding-top: 100px;
+    background-color: #6f9697;
+    padding: 12px 0;
+    font-size: 13px;
+}
+.S_Title h1{
+  color:rgb(44, 25, 150);
+  text-align: center;
+  vertical-align: center;
+  font-size: 50px;
+  padding-bottom: 70px;
+}
+/*------------------------------SCHEDULE PAGE TABLE-------------------------*/
+.table_S {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table_S td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.table_S tr:nth-child(even) {
+  background-color: #dddddd;
+}
+/*--------------IndUsers Page---------------------------------------------*/
+.I_U_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+  height: 200px;
+  padding-top: 100px;
+  background-color: #6f9697;
+
+}
+.I_U_title h1{
+color: rgb(44, 25, 150);
+text-align: center;
+vertical-align: center;
+font-size: 50px;
+padding-bottom: 70px;
+}
+.table_IU {
+  border-collapse: collapse;
+  width: 100%;
+}
+.table_IU td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.table_IU tr:nth-child(even) {
+  background-color: #dddddd;
+}
+/*--------------IndSchedules Page------------------*/
+.I_S_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+  height: 200px;
+  padding-top: 100px;
+  background-color: #6f9697;
+
+}
+.I_S_title h1{
+color: rgb(44, 25, 150);
+text-align: center;
+vertical-align: center;
+font-size: 50px;
+padding-bottom: 70px;
+}
+.table_IS {
+  border-collapse: collapse;
+  width: 100%;
+}
+.table_IS td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.table_IS tr:nth-child(even) {
+  background-color:#dddddd;
+}
+/*-----------------Error Page--------------------*/
+
+.Err_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+  height: 200px;
+  padding-top: 100px;
+  background-color: #6f9697;
+
+}
+.Err_title h1{
+color: rgb(44, 25, 150);
+text-align: center;
+vertical-align: center;
+font-size: 50px;
+padding-bottom: 70px;
+}
+
+/*----------------Footer---------------------*/
+
+footer{
+  position: absolute; bottom: 0; left: 0; right: 0;}
+
+.footer{
+  display: flex;
+  padding: 1% 2%;
+  background-color:#6f9697;
+  justify-content:space-between;
+  align-items: center;
+  margin-top: auto;
+  overflow: hidden;
+ 
+}
+
+/*----------------------------Add USERS----------------------------*/
+
+
+
+ /*Left most image on Footer */
+ .footer img{
+   width: 150px
+
+ }
+ .footer_text{
+   color: rgb(44, 25, 150);
+   font: 5px;
+   text-align: center;
+   padding-top: 0px;
+   padding-bottom:0px;
+ }
+  /*Social icons on Footer */
+
+ .social_icon img{
+    width: 30px;
+    text-align: center;
+    
+  }
