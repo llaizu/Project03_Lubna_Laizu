@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <%- include('../partials/header') %>
+    <maim>
+        <section> 
+            <div class="N_title">
+              <h1>ADD NEW SCHEDULE </h1>
+            </div>
+          </section>
+          <section>
+                
+            <div class="new-form">
+          <form id="new-form" action="/new" method="post"> <index class="js"></index>
+            <div>
+              <label for="username">User Name <br></label>
+              <input id="username" type="username" name="username" class ="form-control" required />
+            </div>
+            <div>
+              <label for="day">Scroll down and choose any day<br></label>
+              <select  name="day" id="day" class ="form-control">
+              <option value = 1>Monday</option>
+              <option value = 2>Tuesday</option>
+              <option value = 3>Wednesday</option>
+              <option value = 4>Thursday</option>
+              <option value = 5>Friday</option>
+              <option value = 6>Saturday</option>
+              <option value = 7>Sunday</option>
+              </select>
+             </div>
+             
+            <div>
+              <label for="start_at">Start At<br></label>
+              <input id="start_at"type="start"name="start_at" class ="form-control" required />
+            </div>
+          
+            <div>
+              <label for="end_at">End At<br></label>
+              <input id="end_at" type="end_at" name="end_at"  class ="form-control" required />
+            </div>
+      
+      </section>
+      <section>
+        <div class = "formButton_N"></div>
+        <button class ="submit_N"><b>ADD SCHEDULE</b></button>
+        </div>
+      </section>
+    </form>
+    </div>
+    </maim>
+    <%- include('../partials/footer') %>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <%- include('../partials/header') %>
+    <maim>
+        <section> 
+            <div class="A_S_title">
+              <h1>ADD SCHEDULE FORM</h1>
+            </div>
+          </section>
+          <section>
+                
+            <div class="schedules-form">
+          <form id="schedules-form" action="/AddSchedule" method="post">
+            <div>
+              <label for="userid">USER ID <br> </label>
+              <input id="userid" type="userid" name="userid" class ="form-control" required />
+            </div>
+            <div>
+              <label for="day">DAY<br> </label>
+              <input id="day" type="day" name="day"  class ="form-control" required />
+            </div>
+            <div>
+              <label for="start">SART AT<br></label>
+              <input id="start"type="start"name="start" class ="form-control" required />
+            </div>
+          
+            <div>
+              <label for="end">END AT<br></label>
+              <input id="end" type="end" name="end"  class ="form-control" required />
+            </div>
+        </div>
+      </section>
+      <section>
+        <div class = "formButton_S"></div>
+        <button class ="submit_S"><b>ADD SCHEDULE</b></button>
+        </div>
+      </section>
+    </form>>
+    </maim>
+    <%- include('../partials/footer') %>
+</body>
+
+</html>
+
+

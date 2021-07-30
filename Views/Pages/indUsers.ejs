@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+     <!--Header-->
+     <%- include('../partials/header') %>
+
+     <main>
+        <section> 
+            <div class="I_U_title">
+              <h1>Individual Users Information</h1>
+            </div>
+          </section>
+          <section>
+    
+          </section>
+          <section>
+            <table class= "table_IU">
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email Address</th>
+                <th>Password</th>
+              </tr>
+              <tr>
+                <th><%= users.firstname %></th>
+                <th><%= users.lastname %></th>
+                <th> <%= users.email %> </th>
+                <th> <%= users.password %></th>
+              </tr>
+            </table>
+          </section>
+ 
+     </main>
+ 
+     <!--Footer-->
+     <%- include('../partials/footer') %>
+</body>
+
+</html>

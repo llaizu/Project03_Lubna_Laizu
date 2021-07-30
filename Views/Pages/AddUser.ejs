@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <%- include('../partials/header') %>
+    <main>
+        <section> 
+            <div class="A_U_title">
+              <h1>ADD USERS FORM</h1>
+          </div>
+        </section>
+              <section>
+                
+                <div class="users-form">
+              <form id="users-form" action="/AddUser" method="post">
+                <div>
+                  <label for="lastName">Last Name <br> </label>
+                  <input id="lastName" type="lastName" name="lastName" class ="form-control" required />
+                </div>
+                <div>
+                  <label for="firstName">First Name<br> </label>
+                  <input id="firstName" type="firstName" name="firstName"  class ="form-control" required />
+                </div>
+                <div>
+                  <label for="email">Email<br></label>
+                  <input id="email"type="email"name="email" class ="form-control" required />
+                </div>
+              
+                <div>
+                  <label for="password">Password<br></label>
+                  <input id="password" type="password" name="password"  class ="form-control" required />
+                </div>
+             
+            </div>
+          </section>
+          <section>
+            <div class = "formButton"></div>
+            <button class ="submit"><b>ADD USER</b></button>
+            </div>
+          </section>
+        </form>
+    </main>
+    <%- include('../partials/footer') %>
+</body>
+
+</html>

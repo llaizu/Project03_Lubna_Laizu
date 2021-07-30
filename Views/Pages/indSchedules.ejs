@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!--Header-->
+    <%- include('../partials/header') %>
+
+    <main>
+      <section> 
+        <div class="I_S_title">
+          <h1>INDIVIDUAL SCHEDULE INFORMATION</h1>
+        </div>
+      </section>
+      <section>
+        <table class= "table_IS">
+          <tr>
+            <th>UserID</th>
+            <th>Day</th>
+            <th>Start At</th>
+            <th>End At</th>
+          </tr>
+         <% for (let i=0; i < newIs.length; i++) {%>
+           <tr>
+             <td><%= newIs[i].user_id %></td>
+             <td><%= newIs[i].day %></td>
+             <td><%= newIs[i].start_at %></td>
+             <td><%= newIs[i].end_at %></td>
+
+           </tr>
+         <%}%>
+            
+        </table>
+      </section>
+    </main>
+
+    <!--Footer-->
+   
+
+    <%- include('../partials/footer') %>
+    
+</body>
+
+</html>
